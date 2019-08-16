@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		A5C54FF22307043900E0A737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54FF12307043900E0A737 /* AppDelegate.swift */; };
-		A5C54FF42307043900E0A737 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54FF32307043900E0A737 /* ViewController.swift */; };
 		A5C54FF72307043900E0A737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C54FF52307043900E0A737 /* Main.storyboard */; };
 		A5C54FF92307043A00E0A737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C54FF82307043A00E0A737 /* Assets.xcassets */; };
 		A5C54FFC2307043A00E0A737 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C54FFA2307043A00E0A737 /* LaunchScreen.storyboard */; };
+		A5C55007230704ED00E0A737 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55006230704ED00E0A737 /* Movie.swift */; };
+		A5C550092307080F00E0A737 /* MovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C550082307080F00E0A737 /* MovieController.swift */; };
+		A5C5500B23070C6000E0A737 /* MovieListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5500A23070C6000E0A737 /* MovieListTableViewController.swift */; };
+		A5C5500D2307152F00E0A737 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5500C2307152F00E0A737 /* ItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A5C54FEE2307043900E0A737 /* MovieInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C54FF12307043900E0A737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5C54FF32307043900E0A737 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5C54FF62307043900E0A737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5C54FF82307043A00E0A737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5C54FFB2307043A00E0A737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5C54FFD2307043A00E0A737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C55006230704ED00E0A737 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		A5C550082307080F00E0A737 /* MovieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieController.swift; sourceTree = "<group>"; };
+		A5C5500A23070C6000E0A737 /* MovieListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewController.swift; sourceTree = "<group>"; };
+		A5C5500C2307152F00E0A737 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		A5C54FF02307043900E0A737 /* MovieInfo */ = {
 			isa = PBXGroup;
 			children = (
-				A5C54FF12307043900E0A737 /* AppDelegate.swift */,
-				A5C54FF32307043900E0A737 /* ViewController.swift */,
 				A5C54FF52307043900E0A737 /* Main.storyboard */,
+				A5C55005230704C400E0A737 /* Models+Controllers */,
+				A5C55004230704B600E0A737 /* Views+Controllers */,
+				A5C55003230704A100E0A737 /* Resources */,
+			);
+			path = MovieInfo;
+			sourceTree = "<group>";
+		};
+		A5C55003230704A100E0A737 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5C54FF12307043900E0A737 /* AppDelegate.swift */,
 				A5C54FF82307043A00E0A737 /* Assets.xcassets */,
 				A5C54FFA2307043A00E0A737 /* LaunchScreen.storyboard */,
 				A5C54FFD2307043A00E0A737 /* Info.plist */,
 			);
-			path = MovieInfo;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A5C55004230704B600E0A737 /* Views+Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A5C5500A23070C6000E0A737 /* MovieListTableViewController.swift */,
+				A5C5500C2307152F00E0A737 /* ItemTableViewCell.swift */,
+			);
+			path = "Views+Controllers";
+			sourceTree = "<group>";
+		};
+		A5C55005230704C400E0A737 /* Models+Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A5C55006230704ED00E0A737 /* Movie.swift */,
+				A5C550082307080F00E0A737 /* MovieController.swift */,
+			);
+			path = "Models+Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5C54FF42307043900E0A737 /* ViewController.swift in Sources */,
+				A5C5500B23070C6000E0A737 /* MovieListTableViewController.swift in Sources */,
+				A5C550092307080F00E0A737 /* MovieController.swift in Sources */,
+				A5C5500D2307152F00E0A737 /* ItemTableViewCell.swift in Sources */,
 				A5C54FF22307043900E0A737 /* AppDelegate.swift in Sources */,
+				A5C55007230704ED00E0A737 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5H77479UZ4;
-				INFOPLIST_FILE = MovieInfo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MovieInfo/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5H77479UZ4;
-				INFOPLIST_FILE = MovieInfo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MovieInfo/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
